@@ -4,18 +4,16 @@ using cAlgo.API;
 using cAlgo.API.Indicators;
 using cAlgo.API.Internals;
 using cAlgo.Indicators;
+using Rdz.cAlgo.Library;
 
-namespace cAlgo
+namespace Rdz.cAlgo.TunnelMartingale
 {
     [Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.None)]
-    public class NewcBot : Robot
+    public partial class TunnelMartingalecBot : RdzRobot
     {
-        [Parameter(DefaultValue = 0.0)]
-        public double Parameter { get; set; }
-
         protected override void OnStart()
         {
-            // Put your initialization logic here
+			// Put your initialization logic here
         }
 
         protected override void OnTick()

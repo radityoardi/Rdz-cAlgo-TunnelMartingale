@@ -8,7 +8,7 @@
     <ProjectTypeGuids>{DD87C1B2-3799-4CA2-93B6-5288EE928820};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>cAlgo</RootNamespace>
+    <RootNamespace>Rdz.cAlgo.TunnelMartingale</RootNamespace>
     <AssemblyName>Rdz.cAlgo.TunnelMartingale</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -32,21 +32,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="cAlgo.API">
+      <HintPath>C:\Users\T88537\Documents\cAlgo\API\cAlgo.API.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="cAlgo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3499da3018340880, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\API\cAlgo.API.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logics\System.cs" />
+    <Compile Include="Parameters.cs" />
     <Compile Include="Rdz.cAlgo.TunnelMartingale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Rdz.cAlgo.Library\trunk\Rdz.cAlgo.Library\Rdz.cAlgo.Library\Rdz.cAlgo.Library.csproj">
+      <Project>{899b89d3-ed6e-4436-94e3-7bf25a1c2915}</Project>
+      <Name>Rdz.cAlgo.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

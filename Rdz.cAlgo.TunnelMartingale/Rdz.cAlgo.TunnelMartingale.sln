@@ -1,7 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rdz.cAlgo.TunnelMartingale", "Rdz.cAlgo.TunnelMartingale\Rdz.cAlgo.TunnelMartingale.csproj", "{2BC02522-9C90-4BCD-AF7C-0C69994BF4E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rdz.cAlgo.Library", "..\..\..\Rdz.cAlgo.Library\trunk\Rdz.cAlgo.Library\Rdz.cAlgo.Library\Rdz.cAlgo.Library.csproj", "{899B89D3-ED6E-4436-94E3-7BF25A1C2915}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{2BC02522-9C90-4BCD-AF7C-0C69994BF4E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BC02522-9C90-4BCD-AF7C-0C69994BF4E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BC02522-9C90-4BCD-AF7C-0C69994BF4E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{899B89D3-ED6E-4436-94E3-7BF25A1C2915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899B89D3-ED6E-4436-94E3-7BF25A1C2915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899B89D3-ED6E-4436-94E3-7BF25A1C2915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899B89D3-ED6E-4436-94E3-7BF25A1C2915}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

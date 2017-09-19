@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Logics\Ext.cs" />
     <Compile Include="Logics\System.cs" />
     <Compile Include="Parameters.cs" />
     <Compile Include="Rdz.cAlgo.TunnelMartingale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TMProps.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Rdz.cAlgo.Library\trunk\Rdz.cAlgo.Library\Rdz.cAlgo.Library\Rdz.cAlgo.Library.csproj">

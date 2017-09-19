@@ -14,16 +14,19 @@ namespace Rdz.cAlgo.TunnelMartingale
         protected override void OnStart()
         {
 			// Put your initialization logic here
+			Initialize();
         }
 
         protected override void OnTick()
         {
-            // Put your core logic here
+			// Put your core logic here
+			Tick();
         }
 
         protected override void OnStop()
         {
-            // Put your deinitialization logic here
+			// Put your deinitialization logic here
+			Deinitialize();
         }
     }
 }

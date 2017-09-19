@@ -11,17 +11,40 @@ using cAlgo.Indicators;
 using Rdz.cAlgo.Library;
 
 
-namespace Rdz.cAlgo.TunnelMartingale.Logics
+namespace Rdz.cAlgo.TunnelMartingale
 {
 	public partial class TunnelMartingalecBot : RdzRobot
 	{
+		#region Properties
+		#region Hidden Properties
+		TMProps _p;
+		#endregion
+
+		TMProps Properties {
+			get
+			{
+				if (_p == null) _p = new TMProps();
+				return _p;
+			}
+		}
+		#endregion
+
 		private void Initialize()
 		{
-			Print("..:: Starting GREEDYGRID © 2017 by Rdz ::..");
+			Print("..:: Rdz.cAlgo.TunnelMartingale © 2017 by Rdz (STARTED) ::..");
 		}
 		private void Deinitialize()
 		{
-			Print("..:: Deinitialize GREEDYGRID © 2017 by Rdz ::..");
+			Print("..:: Rdz.cAlgo.TunnelMartingale © 2017 by Rdz (STOPPED) ::..");
+		}
+		private void Tick()
+		{
+			if (IsFreshStart)
+			{
+				TakeCycleSnapshot();
+				InitializeCycle();
+			}
+			Controller();
 		}
 	}
 }
